@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Perseverance Gym</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            margin: 0px;
+            padding: 0px;
+            background-image: url("/Project1Gym/Img/boxer.jpg");
+            background-size: contain;
+            color: aliceblue;
+        }
+
+        .left {
+            /* border: 3px double darkorange; */
+            position: absolute;
+            top: 20px;
+            left: 50px;
+            padding: 5px;
+            margin-left: 5px;
+            font-size: 20px;
+            /* font-family: fantasy; */
+            /* font-weight: bold; */
+            text-align: center;
+        }
+
+        .left img {
+            width: 50px;
+            height: 50px;
+            filter: invert(100%);
+        }
+
+        .nav {
+            display: inline-block;
+            background-color: black;
+        }
+
+        .nav li {
+            padding: 10px;
+            list-style: none;
+            color: greenyellow;
+            display: inline-block;
+            font-size: 20px;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav a:hover,
+        a.active {
+            color: yellow;
+            text-decoration: underline;
+        }
+
+        .mid {
+            /* border: 3px groove darkgoldenrod; */
+            display: block;
+            width: 33%;
+            margin: 20px auto;
+        }
+
+        .right {
+            /* border: 3px double darkorange; */
+            position: absolute;
+            right: 5px;
+            top: 40px;
+        }
+
+        .button {
+            margin: 0px 10px;
+            background-color: black;
+            color: aliceblue;
+            padding: 4px 8px;
+            border: 3px groove brown;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: bisque;
+            color: indigo;
+        }
+
+        .box {
+            border: 3px solid white;
+            margin: 150px 40px;
+            padding: 50px;
+            width: 40%;
+            border-radius: 10px;
+            font-family: 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+            border-radius: 12px;
+        }
+
+        /* text-align: center; */
+        .form {
+            padding: 7px;
+            display: block;
+            width: 10%;
+            margin: 20px 150px auto ;
+            box-sizing: border-box;
+        }
+
+        .form1 {
+            margin: 5px auto;
+            padding: 7px;
+            border-radius: 10px;
+            width: 650%;
+            font-size: 15px;
+            text-align: center;
+        }
+
+        .form .button {
+            margin: 10px auto;
+            width: 70px;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="head">
+
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="/Project1Gym/Img/logo.png" alt="">
+            <div>The</div>
+            <div>Perseverance</div>
+            <div>Gym</div>
+        </div>
+
+        <!-- mid box for navigation menu -->
+        <div class="mid">
+            <ul class="nav">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Plans</a></li>
+                <li><a href="#">Trainers</a></li>
+                <li><a href="#">Consultancy</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="button">Join Us</button>
+            <button class="button">Call Us</button>
+            <button class="button">E-mail</button>
+        </div>
+    </header>
+
+    <div class="box">
+        <h1>Join the best to be the best!</h1>
+        <form action="act.php">
+            <div class="form">
+                Name
+                <input type="text" name="Name" class="form1" placeholder="Your Name">
+                Age
+                <input type="text" name="Age" class="form1" placeholder="Your Age">
+                Gender
+                <input type="text" name="Gender" class="form1" placeholder="Gender">
+                Contact
+                <input type="tel" name="Mobile" class="form1" placeholder="Mobile No.">
+
+                <button class="button">Submit</button>
+            </div>
+        </form>
+    </div>
+    
+
+</body>
+
+</html
